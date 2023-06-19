@@ -1,18 +1,18 @@
 var linguJSON = {
     "languages": [
       {
-          "lang_name": "English",
+          "lang_name": "ENG",
           "lang_code": "en",
           "url_pattern": "?"
       },
       {
-          "lang_name": "Español",
+          "lang_name": "SPA",
           "lang_code": "es",
           "url_pattern": "?"
       }
     ],
-    "custom_lang_switcher_html": "<div id=\"langswitcher\" class=\"notranslate\"><a id=\"currlanglink\" href=\"\">[[linguCurrLang]]</a> <a href=\"[[linguTargetLangHref1]]\" class=\"targetlang\">[[linguTargetLang1]]</a></div>",
-    "custom_lang_switcher_container_id": "menuContainer",
+    "custom_lang_switcher_html": "<div class=\"dropdown\"><button class=\"dropbtn\"><i class=\'fa fa-globe\' style=\'font-size:36px;color:#000000\'></i></button><div id=\"langswitcher\" class=\"notranslate dropdown-content\"><a href=\"?lang=en\">Eng</a> <a href=\"?lang=es\" >Esp</a></div>",
+    "custom_lang_switcher_container_id": "langlinks",
     "translated_segments": [
         {
             "source": "Hi! I'm Sebastian Romero",
@@ -20,5 +20,6 @@ var linguJSON = {
         },
         
     ]
+            
 };
-                                                 
+                

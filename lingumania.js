@@ -559,7 +559,7 @@ whether standalone or as part of another javascript, are not permitted without p
                                 canBeTranslated = false;
                             } else if (current.attributes) {
                                 for (var i = 0; i < current.attributes.length; i++) {
-                                    if (current.attributes[i].value == "notranslate")
+                                    if (current.attributes[i].value.includes("notranslate"))
                                         canBeTranslated = false;
                                 }
                             }
@@ -681,7 +681,7 @@ whether standalone or as part of another javascript, are not permitted without p
                 var links = d.getElementsByTagName('a');
                 for (var i = 0; i < links.length; i++) {
                     var link = links[i];
-                    if (link.attributes["href"] && link.parentNode.className != 'notranslate') {
+                    if (link.attributes["href"] && link.parentNode.className.indexOf('notranslate') === -1) {
 
 
                         for (var j = 0; j < linkTranslations.length; j++) {
