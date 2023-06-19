@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    background-image: linear-gradient(160deg, hsl(109, 65%, 97%) 0%, #aaf8ef 100%);
+    background-attachment: fixed; 
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;   
+    
+}
+.home{
+    
+    height: auto;
+    align-items: center;
+    padding-left: 10%;
+    border: dashed gray;
+}
+
+.home-content h1 {
+    font-weight: 400;
+    font-size: xx-large;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: large;
+
+}
+
+.notranslate{
+    font-weight: 1;
+
+}
+
