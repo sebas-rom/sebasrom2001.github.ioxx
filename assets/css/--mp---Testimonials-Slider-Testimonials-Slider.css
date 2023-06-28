@@ -280,10 +280,12 @@
   /*margin-bottom: 50px;*/
 }
 
-#carousel-1 {
-  /*height: fit-content;*/
-}
-
-.row {
+.parallax-hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  /*backdrop-filter: revert;
+  -webkit-backdrop-filter: revert;*/
+  /*filter: brightness(40%);*/
 }
 

@@ -110,9 +110,9 @@
 }
 
 body {
-  animation: fadeInAnimation ease 3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+  /*animation: fadeInAnimation ease 3s;*/
+  /*animation-iteration-count: 1;*/
+  /*animation-fill-mode: forwards;*/
 }
 
 @keyframes fadeInAnimation {
@@ -136,5 +136,22 @@ body {
 
 #sound-contact {
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(216deg) brightness(103%) contrast(103%);
+}
+
+html {
+  /*height: 100%;*/
+  /*overflow: hidden;*/
+  /*width: 100%;*/
+}
+
+body {
+  /*height: 100%;*/
+  /*overflow-x: hidden;*/
+  /*overflow-y: auto;*/
+  /*width: 100%;*/
+}
+
+#nav-bar {
+  z-index: 100;
 }
 

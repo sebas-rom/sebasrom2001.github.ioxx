@@ -15,6 +15,7 @@
   opacity: 0;
   -webkit-transition: opacity .3s 0s, visibility 0s .3s, background-color .3s 0s;
   transition: opacity .3s 0s, visibility 0s .3s, background-color .3s 0s;
+  z-index: 99;
 }
 
 .cd-top.cd-top--show, .cd-top.cd-top--fade-out, .cd-top:hover {
@@ -32,7 +33,7 @@
 }
 
 .cd-top:hover {
-  background-color: var(--bs-success-border-subtle);
+  background-color: var(--bs-emphasis-color);
   opacity: 1;
 }
 
@@ -50,16 +51,5 @@
     right: 30px;
     bottom: 30px;
   }
-}
-
-.container {
-  /*width: 100%;*/
-}
-
-footer {
-  /*background: white;*/
-  /*width: 100%;*/
-  /*color: white;*/
-  /*background-color: white;*/
 }
 
