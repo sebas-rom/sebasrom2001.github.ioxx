@@ -113,6 +113,7 @@ body {
   /*animation: fadeInAnimation ease 3s;*/
   /*animation-iteration-count: 1;*/
   /*animation-fill-mode: forwards;*/
+  /*user-select: initial;*/
 }
 
 @keyframes fadeInAnimation {
@@ -164,6 +165,18 @@ body {
 @media (min-width: 576px) {
   #sr-logo {
     display: inline;
+  }
+}
+
+@media (min-width: 300px) {
+  #sebastian-romero-logo-top {
+    font-size: medium;
+  }
+}
+
+@media (min-width: 576px) {
+  #sebastian-romero-logo-top {
+    font-size: large;
   }
 }
 
