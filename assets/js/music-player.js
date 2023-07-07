@@ -8,55 +8,19 @@ const delay = (delayInms) => {
   return new Promise(resolve => setTimeout(resolve, delayInms));
 }
 
-async function genereChanged() {
-  let delayres = await delay(700);
-  var targetDiv = document.getElementById("carousel-music-genre").getElementsByClassName("active")[0];
-  //alert(targetDiv.textContent);
-
-  myMusicPlayer.changeGenre(targetDiv.textContent);
+function addToGenere() {
+  myMusicPlayer.changeGenereIdIndex(1);
+}
+function substractToGenere() {
+  myMusicPlayer.changeGenereIdIndex(-1);
 }
 
 
 class MusicPlayer {
 
-  changeGenre(newGenre) {
-    this.currIndex = -1;
-    this.albums = [
-      "a1",
-      "b2",
-      "c3",
-      "d4",
-      "e5"
-    ];
-    this.trackNames = [
-      "Skylike - Dawn",
-      "Alex Skrindo - Me & You",
-      "Kaaze - Electro Boy",
-      "Jordan Schor - Home",
-      "Martin Garrix - Proxy"
-    ];
-    this.trackUrl = [
-      "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/3.mp3",
-      "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/3.mp3",
-      "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/3.mp3",
-      "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/4.mp3",
-      "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/5.mp3"
-    ];
 
-    this.buffInterval = null;
-    this.tFlag = false;
-    this.trackNumber = 0;
-    this.currIndex = 0;
-    this.seekLoc = 0;
-    this.seekT = 0;
-    this.bTime = 0;
-
-    this.createMusicPlayer();
-    //alert(newGenre);
-    this.initPlayer();
-
-  }
   constructor() {
+    this.genereID=1;
     this.firstTime = true;
     this.isPlayActive = false;
     this.playerTrack = $("#player-track");
@@ -71,6 +35,7 @@ class MusicPlayer {
     this.trackTime = $("#track-time");
     this.insTime = $("#ins-time");
     this.sHover = $("#s-hover");
+   
 
     this.playPauseButton = $("#play-pause-button");
 
@@ -118,19 +83,135 @@ class MusicPlayer {
       "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/5.mp3"
     ];
 
-    this.createMusicPlayer();
+    this.initPlayer();
+
+  }
+  
+  changeGenereIdIndex(difference){
+    if(this.genereID==4 && difference>0){
+      this.genereID=1;
+    }else if(this.genereID==1 && difference<0){
+      this.genereID=4;
+    }else{
+      this.genereID=this.genereID+difference;
+    }
+    //console.log(this.genereID);
+    this.changeGenre(this.genereID);
+
+  }
+  changeGenre(newGenre) {
+    this.currIndex = -1;
+
+    switch (newGenre) {
+      case 1:
+        this.albums = [
+          "POP/EDM",
+          "b2",
+          "c3",
+          "d4",
+          "e5"
+        ];
+        this.trackNames = [
+          "Skylike - Dawn",
+          "Alex Skrindo - Me & You",
+          "Kaaze - Electro Boy",
+          "Jordan Schor - Home",
+          "Martin Garrix - Proxy"
+        ];
+        this.trackUrl = [
+          "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/3.mp3",
+          "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/3.mp3",
+          "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/3.mp3",
+          "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/4.mp3",
+          "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/5.mp3"
+        ];
+        break;
+      case 2:
+        this.albums = [
+          "ROCK",
+          "b2",
+          "c3",
+          "d4",
+          "e5"
+        ];
+        this.trackNames = [
+          "Skylike - Dawn",
+          "Alex Skrindo - Me & You",
+          "Kaaze - Electro Boy",
+          "Jordan Schor - Home",
+          "Martin Garrix - Proxy"
+        ];
+        this.trackUrl = [
+          "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/3.mp3",
+          "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/3.mp3",
+          "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/3.mp3",
+          "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/4.mp3",
+          "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/5.mp3"
+        ];
+        break;
+      case 3:
+        this.albums = [
+          "RAp",
+          "b2",
+          "c3",
+          "d4",
+          "e5"
+        ];
+        this.trackNames = [
+          "Skylike - Dawn",
+          "Alex Skrindo - Me & You",
+          "Kaaze - Electro Boy",
+          "Jordan Schor - Home",
+          "Martin Garrix - Proxy"
+        ];
+        this.trackUrl = [
+          "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/3.mp3",
+          "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/3.mp3",
+          "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/3.mp3",
+          "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/4.mp3",
+          "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/5.mp3"
+        ];
+        break;
+      case 4:
+        this.albums = [
+          "Assorted",
+          "b2",
+          "c3",
+          "d4",
+          "e5"
+        ];
+        this.trackNames = [
+          "Skylike - Dawn",
+          "Alex Skrindo - Me & You",
+          "Kaaze - Electro Boy",
+          "Jordan Schor - Home",
+          "Martin Garrix - Proxy"
+        ];
+        this.trackUrl = [
+          "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/3.mp3",
+          "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/3.mp3",
+          "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/3.mp3",
+          "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/4.mp3",
+          "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/5.mp3"
+        ];
+        break;
+      default:
+        break;
+    }
+
+
+    this.buffInterval = null;
+    this.tFlag = false;
+    this.trackNumber = 0;
+    this.currIndex = 0;
+    this.seekLoc = 0;
+    this.seekT = 0;
+    this.bTime = 0;
+
     this.initPlayer();
 
   }
 
-  createMusicPlayer() {
-
-    this.trackNumber = this.trackUrl.length;
-    for (let i = 0; i < this.trackUrl.length; i++) {
-      this.albumArtworks.push("_" + (i + 1));
-    }
-
-  }
 
   playPause() {
 
@@ -306,7 +387,7 @@ class MusicPlayer {
       var currTrackName = this.trackNames[this.currIndex];
       var currArtwork = this.albumArtworks[this.currIndex];
 
-      this.audio.src = this.trackUrl[this.currIndex];
+      this.audio.src = this.trackUrl[0];
 
       this.nTime = 0;
       this.bTime = new Date();
@@ -350,6 +431,11 @@ class MusicPlayer {
   }
 
   initPlayer() {
+    this.trackNumber = this.trackUrl.length;
+    this.albumArtworks = [];
+    for (let i = 0; i < this.trackUrl.length; i++) {
+      this.albumArtworks.push("_" + (this.genereID));
+    }
 
     if (this.firstTime) {
       this.selectTrack(0);

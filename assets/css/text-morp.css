@@ -1,0 +1,18 @@
+#text-morp-container {
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  filter: url(#text-morp-threshold) blur(0.2px);
+}
+
+/* Your average text styling */
+
+#text-morp-text1, #text-morp-text2 {
+  font-size: 50px;
+  position: absolute;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  user-select: none;
+}
+
