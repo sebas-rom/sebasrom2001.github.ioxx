@@ -188,9 +188,14 @@ body {
   }
 }
 
-@media (min-width: 576px) {
-  #carousel-testimonials {
-    /*height: 400px;*/
+#hear-it-yourself {
+  width: 620px;
+  /*display: none;*/
+}
+
+@media (max-width: 620px) {
+  #hear-it-yourself {
+    width: 90%;
   }
 }
 

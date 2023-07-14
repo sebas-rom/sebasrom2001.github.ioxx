@@ -1,7 +1,7 @@
 .cd-top {
-  display: inline-block;
-  height: 30px;
-  width: 30px;
+  /*display: inline-block;*/
+  height: 45px;
+  width: 45px;
   position: fixed;
   bottom: 40px;
   right: 10px;

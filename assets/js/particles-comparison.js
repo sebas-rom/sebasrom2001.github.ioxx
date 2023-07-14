@@ -9,8 +9,8 @@ Particles.init({
 })
 */
 
-
-
+if (window.matchMedia('(min-width: 800px)').matches) {
+  
 particlesJS("particles-comparison", {
   "particles": {
     "number": {
@@ -117,3 +117,5 @@ particlesJS("particles-comparison", {
   "retina_detect": true
 });
 
+
+}
