@@ -444,6 +444,7 @@ class MusicPlayer {
       const showHoverHandler = (event) => {
         this.showHover(event);
       };
+      
       this.sArea.on("mousemove", showHoverHandler);
       this.sArea.on("mouseout", () => this.hideHover());
       this.sArea.on("click", () => this.playFromClickedPos());

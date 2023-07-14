@@ -1,5 +1,5 @@
 .before-color-comparison::-webkit-media-controls-panel {
-  background-color: var(--bs-danger-bg-subtle);
+  /*background-color: var(--bs-danger-bg-subtle);*/
 }
 
 .before-color-comparison-2::-webkit-media-controls-panel {
@@ -12,10 +12,10 @@
 }
 
 .before-color-comparison-2 {
-  display: none;
+  /*display: none;*/
 }
 
 #audio-player-before-mixcomparison {
-  display: none;
+  /*display: none;*/
 }
 

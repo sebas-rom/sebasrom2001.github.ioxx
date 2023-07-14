@@ -26,8 +26,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="assets/css/back-to-top-2.css">
-    <link rel="stylesheet" href="assets/css/Back-To-Top.css">
     <link rel="stylesheet" href="assets/css/Carousel-Hero.css">
+    <link rel="stylesheet" href="assets/css/comparison-player.css">
     <link rel="stylesheet" href="assets/css/header-animation.css">
     <link rel="stylesheet" href="assets/css/Hero-Clean-Reverse-images.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -190,22 +190,66 @@ style="height: inherit;width: inherit;"></span><span class="visually-hidden">Nex
                     <h1 class="text-light" style="text-align: center;margin-top: 0px;">HEAR IT YOURSELF</h1>
                     <p style="text-align: center;color: var(--bs-body-bg);">Witness audio transformation firsthand.</p>
                     <div style="margin-top: 17px;">
-                        <div class="d-flex d-xl-flex justify-content-center justify-content-xl-center" id="audio-container-mixcomparison" style="width: 100%;"><audio id="audio-player-before-mixcomparison" class="before-color-comparison" controls="" preload="none" style="margin-bottom: 19px;margin-top: 11px;">
+                        <div class="w-100" style="margin-bottom: 52px;">
+                            <div class="app-cover" style="margin-bottom: -35px;height: 66px;">
+                                <div id="player-mix-comp" class="player">
+                                    <div class="d-flex d-lg-flex align-items-center align-items-lg-center player-content" id="player-content-mix-comp">
+                                        <div id="play-pause-button-mix-comp" class="button play-pause-button" style="margin-left: 10px;padding-right: 40px;margin-right: 10px;"><i class="fas fa-play" id="icon-play-pause-button-mix-comp"></i></div>
+                                        <div id="player-track-mix-comp" class="player-track" style="padding-top: 5px;padding-left: 10px;padding-right: 10px;">
+                                            <div id="album-name-mix-comp" class="album-name"></div>
+                                            <div id="track-name-mix-comp" class="track-name"></div>
+                                            <div id="track-time-mix-comp" class="track-time">
+                                                <div id="current-time-mix-comp" class="current-time"></div>
+                                                <div id="track-length-mix-comp" class="track-length"></div>
+                                            </div>
+                                            <div id="s-area-mix-comp" class="s-area">
+                                                <div id="ins-time-mix-comp" class="ins-time"></div>
+                                                <div id="s-hover-mix-comp" class="s-hover"></div>
+                                                <div id="seek-bar-mix-comp" class="seek-bar"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex d-xl-flex justify-content-center justify-content-xl-center" id="audio-container-mixcomparison" style="width: 100%;"><audio id="audio-player-before-mixcomparison" class="hide-object" controls="" preload="none" style="margin-bottom: 19px;margin-top: 11px;width: 100%;">
                                 <source src="https://drive.google.com/u/0/uc?id=1Hi8hIOEl7CuNv6-Vr7dXxFB68x4L_hb1&amp;export=download" type="audio/mpeg">
                             </audio></div>
                         <div class="d-flex d-xl-flex justify-content-center justify-content-xl-center" id="audio-container-mixcomparison-1"><audio id="audio-player-after-mixcomparison" class="hide-object" controls="" preload="none" style="margin-bottom: 19px;margin-top: 11px;width: 100%;">
                                 <source src="https://drive.google.com/u/0/uc?id=1t2EXRHhSOf8vDpOxE0wHMLSzcmH9NR_B&amp;export=download" type="audio/mpeg">
                             </audio></div>
-                        <div class="d-flex d-sm-flex d-md-flex justify-content-center justify-content-sm-center justify-content-md-center" id="button-container-mixcomparison"><button class="btn btn-light" id="before-btn-mixcomparison" type="button" style="width: 100%;background: var(--bs-danger-bg-subtle);margin-right: 15px;">UNMIXED</button><button class="btn btn-light" id="after-btn-mixcomparison" style="width: 100%;" type="button">MIXED</button></div>
+                        <div class="d-flex d-sm-flex d-md-flex justify-content-center justify-content-sm-center justify-content-md-center" id="button-container-mixcomparison"><button class="btn btn-outline-light" id="before-btn-mixcomparison" type="button" style="width: 100%;margin-right: 15px;">UNMIXED</button><button class="btn btn-light" id="after-btn-mixcomparison" style="width: 100%;" type="button">MIXED</button></div>
                     </div>
-                    <div style="margin-top: 54px;">
-                        <div class="d-flex d-xl-flex justify-content-center justify-content-xl-center" id="audio-container-restorationcomparison"><audio id="audio-player-before-restorationcomparison" class="before-color-comparison-2" controls preload="none" style="margin-bottom: 19px;margin-top: 11px;width: 100%;">
-    <source src="https://drive.google.com/u/0/uc?id=1rQcjvYil8OyovCdY8BvATwXztu08GCHw&export=download" type="audio/mpeg" />
-</audio></div>
-                        <div class="d-flex d-xl-flex justify-content-center justify-content-xl-center" id="audio-container-restorationcomparison"><audio id="audio-player-after-restorationcomparison" class="hide-object" controls preload="none" style="margin-bottom: 19px;margin-top: 11px;width: 100%;">
-    <source src="https://drive.google.com/u/0/uc?id=1Dq0AvVzdhjsQKzP0RprctmopTjujOXpq&export=download" type="audio/mpeg" />
-</audio></div>
-                        <div class="d-flex d-sm-flex d-md-flex justify-content-center justify-content-sm-center justify-content-md-center" id="button-container-restorationcomparison"><button class="btn btn-light" id="before-btn-restorationcomparison" type="button" style="width: 100%;background: #fccc93;margin-right: 15px;">DAMAGED</button><button class="btn btn-light" id="after-btn-restorationcomparison" style="width: 100%;" type="button">RESTORED</button></div>
+                    <div style="margin-top: 45px;">
+                        <div class="w-100" style="margin-bottom: 52px;">
+                            <div class="app-cover" style="margin-bottom: -35px;height: 66px;">
+                                <div id="player-restorationcomparison" class="player">
+                                    <div class="d-flex d-lg-flex align-items-center align-items-lg-center player-content" id="player-content-restorationcomparison">
+                                        <div id="play-pause-button-restorationcomparison" class="button play-pause-button" style="margin-left: 10px;padding-right: 40px;margin-right: 10px;"><i class="fas fa-play"></i></div>
+                                        <div id="player-track-restorationcomparison" class="player-track" style="padding-top: 5px;padding-left: 10px;padding-right: 10px;">
+                                            <div id="album-name-restorationcomparison" class="album-name"></div>
+                                            <div id="track-name-restorationcomparison" class="track-name"></div>
+                                            <div id="track-time-restorationcomparison" class="track-time">
+                                                <div id="current-time-restorationcomparison" class="current-time"></div>
+                                                <div id="track-length-restorationcomparison" class="track-length"></div>
+                                            </div>
+                                            <div id="s-area-restorationcomparison" class="s-area">
+                                                <div id="ins-time-restorationcomparison" class="ins-time"></div>
+                                                <div id="s-hover-restorationcomparison" class="s-hover"></div>
+                                                <div id="seek-bar-restorationcomparison" class="seek-bar"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex d-xl-flex justify-content-center justify-content-xl-center" id="audio-container-restorationcomparison"><audio id="audio-player-before-restorationcomparison" class="hide-object" controls="" preload="none" style="margin-bottom: 19px;margin-top: 11px;width: 100%;">
+                                <source src="https://drive.google.com/u/0/uc?id=1rQcjvYil8OyovCdY8BvATwXztu08GCHw&amp;export=download" type="audio/mpeg">
+                            </audio></div>
+                        <div class="d-flex d-xl-flex justify-content-center justify-content-xl-center" id="audio-container-restorationcomparison"><audio id="audio-player-after-restorationcomparison" class="hide-object" controls="" preload="none" style="margin-bottom: 19px;margin-top: 11px;width: 100%;">
+                                <source src="https://drive.google.com/u/0/uc?id=1Dq0AvVzdhjsQKzP0RprctmopTjujOXpq&amp;export=download" type="audio/mpeg">
+                            </audio></div>
+                        <div class="d-flex d-sm-flex d-md-flex justify-content-center justify-content-sm-center justify-content-md-center" id="button-container-restorationcomparison"><button class="btn btn-outline-light" id="before-btn-restorationcomparison" type="button" style="width: 100%;margin-right: 15px;">DAMAGED</button><button class="btn btn-light" id="after-btn-restorationcomparison" style="width: 100%;" type="button">RESTORED</button></div>
                     </div>
                 </div>
             </div><a class="btn btn-outline-light z-index-1" role="button" style="margin-bottom: 47PX;width: fit-content;" href="coming-soon.html">EXPLORE MORE PROJECTS</a>
@@ -413,7 +457,6 @@ style="height: inherit;width: inherit;"></span><span class="visually-hidden">Nex
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="assets/js/bs-init.js"></script>
-    <script src="assets/js/Animated-Back-To-Top-backtotop.js"></script>
     <script src="assets/js/back-to-top-2.js"></script>
     <script src="assets/js/buttons.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
@@ -428,6 +471,7 @@ style="height: inherit;width: inherit;"></span><span class="visually-hidden">Nex
     <script src="assets/js/music-player.js"></script>
     <script src="assets/js/page-not-found.js"></script>
     <script src="assets/js/particles-comparison.js"></script>
+    <script src="assets/js/restoration-comparison.js"></script>
     <script src="assets/js/text-morp.js"></script>
 </body>
 
