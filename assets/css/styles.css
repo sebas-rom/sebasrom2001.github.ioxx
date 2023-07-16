@@ -1,0 +1,207 @@
+:root {
+  /*scroll-behavior: smooth;*/
+}
+
+.dropdown-content a:hover, .dropdown .dropbtn:hover {
+  color: var(--bs-emphasis-color);
+}
+
+.languageSelector {
+  float: right;
+  height: inherit;
+}
+
+.dropdown {
+  /*float: left;*/
+  overflow: hidden;
+  /*height: 60px;*/
+  width: 60px;
+  /*padding-left: 200px;*/
+  /*background-color: red;*/
+}
+
+.dropdown .dropbtn {
+  font-size: x-large;
+  color: var(--bs-primary-border-subtle);
+  border: none;
+  outline: none;
+  height: inherit;
+  width: inherit;
+  background-color: inherit;
+  text-align: center;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--bs-secondary-bg-subtle);
+  width: inherit;
+  /*box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);*/
+  z-index: 2;
+  /*margin-top: 12px;*/
+}
+
+.dropdown-content a {
+  float: none;
+  color: var(--bs-primary-border-subtle);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  position: fixed;
+}
+
+#navcol-1 {
+  /*float: right;*/
+  /*padding-left: 100px;*/
+  /*padding-right: 10px;*/
+  justify-content: flex-end;
+  background-color: var(--bs-secondary-bg-subtle);
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 10px 15px;
+  background-color: var(--bs-light-border-subtle);
+  z-index: 1;
+}
+
+.navbar:hover {
+  /*z-index: 3;*/
+}
+
+#langlinks {
+  float: left;
+  /*background-color: black;*/
+}
+
+.simple-slider {
+  padding-top: 60px;
+  z-index: 1;
+}
+
+#carrousel-Content {
+  /*width: 100%;*/
+  /*height: 100%;*/
+  /*padding-right: 150px;*/
+  /*margin: auto;*/
+  /*position: relative;*/
+  position: absolute;
+  bottom: 10%;
+  right: 65%;
+}
+
+#heading-carrousel {
+  /*padding-left: auto;*/
+  margin: auto;
+  /*left: 50%;*/
+  /*width: inherit;*/
+  /*height: initial;*/
+  padding-top: 50px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#paralax-bg-carrousel {
+  position: relative;
+}
+
+body {
+  /*animation: fadeInAnimation ease 3s;*/
+  /*animation-iteration-count: 1;*/
+  /*animation-fill-mode: forwards;*/
+  /*user-select: initial;*/
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#star-review-container:hover {
+  /*display: flex;*/
+}
+
+.navbar-toggler-icon {
+  /*color: #ea830e;*/
+  /*background-color: #ea830e;*/
+  /*opacity: 0;*/
+}
+
+#sound-contact {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(216deg) brightness(103%) contrast(103%);
+}
+
+html {
+  /*height: 100%;*/
+  /*overflow: hidden;*/
+  /*width: 100%;*/
+}
+
+body {
+  /*height: 100%;*/
+  /*overflow-x: hidden;*/
+  /*overflow-y: auto;*/
+  /*width: 100%;*/
+}
+
+#nav-bar {
+  z-index: 100;
+}
+
+@media (min-width: 300px) {
+  #sr-logo {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) {
+  #sr-logo {
+    display: inline;
+  }
+}
+
+@media (min-width: 300px) {
+  #sebastian-romero-logo-top {
+    font-size: medium;
+  }
+}
+
+@media (min-width: 576px) {
+  #sebastian-romero-logo-top {
+    font-size: large;
+  }
+}
+
+@media (max-width: 570px) {
+  #carousel-testimonials {
+    height: 400px;
+  }
+}
+
+#hear-it-yourself {
+  width: 620px;
+  /*display: none;*/
+}
+
+@media (max-width: 620px) {
+  #hear-it-yourself {
+    width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  #profile-picture {
+    margin-bottom: 20px;
+  }
+}
+

@@ -1,0 +1,24 @@
+.hidden {
+  opacity: 0;
+}
+
+.console-container {
+  /*background-color: gray;*/
+  text-align: center;
+  height: 40px;
+  width: fit-content;
+  display: inline-flex;
+  position: absolute;
+  color: white;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.console-underscore {
+  color: black;
+  display: inline-block;
+  position: relative;
+  top: -5px;
+}
+

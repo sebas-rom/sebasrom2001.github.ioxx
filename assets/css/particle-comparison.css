@@ -1,0 +1,26 @@
+.particles-comparison {
+  /*width: 100%;*/
+  /*position: relative;*/
+  /*top: 0px;*/
+  /*bottom: 600px;*/
+  /*height: 100px;*/
+  /*z-index: -1;*/
+  /*display: none;*/
+}
+
+#particles-comparison {
+  width: 100%;
+  position: relative;
+  /*top: 0px;*/
+  bottom: 600px;
+  height: 600px;
+  margin-bottom: -600px;
+  z-index: 0;
+  /*pointer-events: auto;*/
+  /*display: none;*/
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+
