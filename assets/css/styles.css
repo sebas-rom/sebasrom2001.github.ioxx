@@ -199,3 +199,9 @@ body {
   }
 }
 
+@media (max-width: 576px) {
+  #profile-picture {
+    margin-bottom: 20px;
+  }
+}
+
