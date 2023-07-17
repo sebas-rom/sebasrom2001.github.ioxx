@@ -16,9 +16,10 @@
 }
 
 .console-underscore {
-  color: black;
+  color: rgba(0,0,0,0.79);
   display: inline-block;
   position: relative;
-  top: -5px;
+  top: -2px;
+  font-weight: 250;
 }
 
