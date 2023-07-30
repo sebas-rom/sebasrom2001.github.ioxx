@@ -76,10 +76,10 @@ class MusicPlayer {
       ""//repeated
     ];
     this.trackUrl = [
-      "https://drive.google.com/u/0/uc?id=1FNvdPCSgoU_-29wFw7O6vC3faqMzpp93&export=download",
-      "https://drive.google.com/u/0/uc?id=1gxzqG8m5MBM1WExTo1V46GSCoiiKFUw4&export=download",
-      "https://drive.google.com/u/0/uc?id=1hJuwr818Zn0XwIeMF4nqlhZZRS7bNrQw&export=download",
-      "https://drive.google.com/u/0/uc?id=1jqs_XhIlB0STklvmrTkFl9z5VGjbuhl7&export=download",
+      "assets/mp3/pop/Ecstasy.mp3",
+      "assets/mp3/pop/Puzzle.mp3",
+      "assets/mp3/pop/Shela-Ya-Marhaba.mp3",
+      "assets/mp3/pop/Your-Star.mp3",
       //repeated
     ];
 
@@ -119,10 +119,10 @@ class MusicPlayer {
           ""//repeated
         ];
         this.trackUrl = [
-          "https://drive.google.com/u/0/uc?id=1FNvdPCSgoU_-29wFw7O6vC3faqMzpp93&export=download",
-          "https://drive.google.com/u/0/uc?id=1gxzqG8m5MBM1WExTo1V46GSCoiiKFUw4&export=download",
-          "https://drive.google.com/u/0/uc?id=1hJuwr818Zn0XwIeMF4nqlhZZRS7bNrQw&export=download",
-          "https://drive.google.com/u/0/uc?id=1jqs_XhIlB0STklvmrTkFl9z5VGjbuhl7&export=download",
+          "assets/mp3/pop/Ecstasy.mp3",
+          "assets/mp3/pop/Puzzle.mp3",
+          "assets/mp3/pop/Shela-Ya-Marhaba.mp3",
+          "assets/mp3/pop/Your-Star.mp3",
           //missing
         ];
         break;
@@ -142,7 +142,7 @@ class MusicPlayer {
           "",//repeated
         ];
         this.trackUrl = [
-          "https://drive.google.com/u/0/uc?id=1Z3QbIJSa3DCrOftvCkb-B4va9G5iNGww&export=download",
+          "assets/mp3/rock/Same-Kind-Of-Life",
         ];
         break;
       case 3:
@@ -161,7 +161,7 @@ class MusicPlayer {
           "",//repeated
         ];
         this.trackUrl = [
-          "https://drive.google.com/u/0/uc?id=1pkMypehxxlWAGts_e59xRJDXRTGs54Pi&export=download",
+          "assets/mp3/Saudade-Do-Teu-Beijo",
         ];
         break;
       case 4:
@@ -191,8 +191,8 @@ class MusicPlayer {
 
         ];
         this.trackUrl = [
-          "https://drive.google.com/u/0/uc?id=1PWIHMqdWhbVL4DOjMGkB8PWxogrKWwbv&export=download",
-          
+          "assets/mp3/assorted/The-Saga-Of-Harrison-Crabfeathers.mp3",
+
         ];
         break;
       default:
