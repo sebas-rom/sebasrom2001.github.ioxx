@@ -142,7 +142,7 @@ class MusicPlayer {
           "",//repeated
         ];
         this.trackUrl = [
-          "assets/mp3/rock/Same-Kind-Of-Life",
+          "assets/mp3/rock/Same-Kind-Of-Life.mp3",
         ];
         break;
       case 3:
@@ -161,7 +161,7 @@ class MusicPlayer {
           "",//repeated
         ];
         this.trackUrl = [
-          "assets/mp3/Saudade-Do-Teu-Beijo",
+          "assets/mp3/Saudade-Do-Teu-Beijo.mp3",
         ];
         break;
       case 4:
